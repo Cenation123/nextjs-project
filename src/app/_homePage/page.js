@@ -389,7 +389,7 @@ const HomePage = () => {
 
       <section className="currency-section graph-sec">
         <div className="container">
-          <LazyLoad threshold={0.5}>
+   
             <>
               <ul>
                 <li
@@ -412,7 +412,7 @@ const HomePage = () => {
                 }}
               />
             </>
-          </LazyLoad>
+   
         </div>
       </section>
 
