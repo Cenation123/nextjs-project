@@ -1,0 +1,709 @@
+.inside-section-header {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 65px;
+  position: relative;
+  overflow: hidden;
+  /* background: url(../img/inner-header-bg.svg); */
+  background: rgb(249,228,33);
+  background: linear-gradient(150deg, rgba(249,228,33,0.3) 0%, rgba(126,176,243,0.3) 51%);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 65px;
+}
+@media (max-width: 1680px) {
+  .inside-section-header {
+    padding-top: 132px;
+    padding-bottom: 65px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1600px) {
+  .inside-section-header {
+    padding-top: 120px;
+    padding-bottom: 95px;
+  }
+}
+@media (max-width: 1440px) {
+  .inside-section-header {
+    padding-top: 118px;
+    padding-bottom: 55px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 820px) {
+  .inside-section-header {
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .inside-section-header {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+}
+.inside-section-header .txt-b {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  text-align: center;
+}
+.inside-section-header h1 {
+  color: #18529F;
+  margin-bottom: 25px;
+}
+@media (max-width: 1680px) {
+  .inside-section-header h1 {
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 1440px) {
+  .inside-section-header h1 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .inside-section-header h1 {
+    margin-bottom: 10px;
+  }
+}
+.inside-section-header .sub-title {
+  font-size: 35px;
+}
+@media (max-width: 1680px) {
+  .inside-section-header .sub-title {
+    font-size: 31px;
+  }
+}
+@media (max-width: 1440px) {
+  .inside-section-header .sub-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1366px) {
+  .inside-section-header .sub-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1280px) {
+  .inside-section-header .sub-title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1024px) {
+  .inside-section-header .sub-title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 900px) {
+  .inside-section-header .sub-title {
+    font-size: 17px;
+  }
+}
+.inside-section-header .breadcrumbs {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .inside-section-header .breadcrumbs {
+    top: 35px;
+    left: 70px;
+  }
+}
+@media (max-width: 820px) {
+  .inside-section-header .breadcrumbs {
+    top: 25px;
+    left: 20px;
+  }
+}
+.inside-section-header .breadcrumbs span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3px;
+  font-size: 14px;
+ 
+}
+.inside-section-header .breadcrumbs span .seperate{
+ margin-left: 0;
+ margin-right: 7px;
+}
+@media (max-width: 1680px) {
+  .inside-section-header .breadcrumbs span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1440px) {
+  .inside-section-header .breadcrumbs span {
+    font-size: 12px;
+  }
+}
+
+.inside-header {
+  position: static;
+  box-shadow: 0 1px 100px -1px rgba(0, 0, 0, 0.1);
+}
+
+.empty-div {
+  height: 170px;
+}
+@media (max-width: 1680px) {
+  .empty-div {
+    height: 148px;
+  }
+}
+@media (max-width: 1440px) {
+  .empty-div {
+    height: 125px;
+  }
+}
+@media (max-width: 1366px) {
+  .empty-div {
+    height: 118px;
+  }
+}
+@media (max-width: 1000px) {
+  .empty-div {
+    height: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .empty-div {
+    height: 90px;
+  }
+}
+
+.more-link.learn-more.inside-btn {
+  padding-right: 0;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.more-link.learn-more.inside-btn .arrow-icon {
+  width: 18px;
+  height: 18px;
+  background: #FFCC01;
+  position: relative;
+  transform: translateY(0) rotate(45deg);
+  margin-top: 0;
+  right: 0;
+  margin-left: 15px;
+}
+@media (max-width: 1440px) {
+  .more-link.learn-more.inside-btn .arrow-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+.more-link.learn-more.inside-btn .arrow-icon svg {
+  width: 8px;
+  height: auto;
+}
+@media (max-width: 1440px) {
+  .more-link.learn-more.inside-btn .arrow-icon svg {
+    width: 7px;
+    height: auto;
+  }
+}
+.more-link.learn-more.inside-btn .arrow-icon svg path {
+  stroke: #18529F;
+}
+.more-link.learn-more.inside-btn:hover .arrow-icon {
+  background: #18529F;
+}
+.more-link.learn-more.inside-btn:hover .arrow-icon svg path {
+  stroke: #FFCC01;
+}
+
+.top-section .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+@media (max-width: 1680px) {
+  .top-section .page-link {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1440px) {
+  .top-section .page-link {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 820px) {
+  .top-section .page-link {
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .top-section .page-link {
+    display: none;
+  }
+}
+.top-section .page-link li a {
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+.top-section .page-link li a::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 2px;
+  background: #000;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.top-section .page-link li a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background: #FFCC01;
+  bottom: 0;
+  left: 0;
+}
+.top-section .page-link li:hover a {
+  color: #FFCC01;
+}
+.top-section .page-link li:first-child a::before {
+  display: none;
+}
+.top-section .page-link li.active a::after {
+  width: 100%;
+}
+.top-section .page-link::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 55%;
+  background: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 820px) {
+  .top-section .page-link::before {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .top-section .page-link::before {
+    width: 80%;
+  }
+}
+.top-section .page-links-mob {
+  display: none;
+}
+@media (max-width: 767px) {
+  .top-section .page-links-mob {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .top-section .page-links-mob select {
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #18529F !important;
+    border: none;
+
+    width: 100%;
+  }
+  .top-section .page-links-mob select:focus {
+    outline: none;
+  }
+}
+.top-section p {
+  padding: 0 200px;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  .top-section p {
+    padding: 0 115px;
+  }
+}
+@media (max-width: 767px) {
+  .top-section p {
+    padding: 0 0;
+  }
+}
+.top-section .top-img-wrap {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .top-section .top-img-wrap {
+    padding: 0;
+  }
+}
+
+.live-account {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background: url(../img/open-the-live-account-bg.svg); */
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 1440px) {
+  .live-account {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .live-account {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .live-account {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.live-account .container h3 {
+  font-weight: 600;
+}
+.live-account .container h2 {
+  margin-bottom: 8px;
+}
+.live-account .container .trading-title-wrapp {
+  text-align: center;
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps {
+    flex-direction: column;
+  }
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li {
+  width: 450px;
+  position: relative;
+  margin-bottom: 10px;
+}
+@media (max-width: 1680px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li {
+    width: 370px;
+  }
+}
+@media (max-width: 1440px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li {
+    width: 335px;
+  }
+}
+@media (max-width: 1280px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li {
+    width: 310px;
+  }
+}
+@media (max-width: 420px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li {
+    width: 100%;
+  }
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  font-size: 34px;
+  font-weight: 500;
+}
+@media (max-width: 1680px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+    top: -3px;
+    left: -3px;
+  }
+}
+@media (max-width: 1440px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    top: 0px;
+    left: -1px;
+  }
+}
+@media (max-width: 1366px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1280px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1024px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count {
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    left: 0;
+  }
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotate(45deg);
+  box-shadow: -1px 9px 60px -7px #184F9A;
+  border-radius: 8px;
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 46px 36px 110px -23px #184F9A;
+  padding: 30px 45px 25px 80px;
+}
+@media (max-width: 1680px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp {
+    padding: 20px 20px 20px 65px;
+    box-shadow: 14px 32px 103px -20px #184F9A;
+  }
+}
+@media (max-width: 1440px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp {
+    margin-bottom: 10px;
+    box-shadow: 14px 32px 40px -20px #184F9A;
+  }
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp {
+    text-align: left;
+  }
+}
+@media (max-width: 767px) {
+  .live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp {
+    padding: 20px 15px 20px 65px;
+  }
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url(../img/trading-blue-layer.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp p {
+  font-weight: 200;
+}
+.live-account .container .trading-steps-wrapp > div .trading-steps li .count-text-wrapp .txt-b {
+  font-weight: 600;
+}
+.live-account .container .trading-steps-wrapp .trading-right {
+  margin-top: 25px;
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-steps-wrapp .trading-right {
+    margin-top: 0;
+  }
+}
+.live-account .container .trading-steps-wrapp .trading-right .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper {
+    margin-top: 20px;
+  }
+}
+.live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+  font-size: 24px;
+  padding: 12px 50px;
+}
+@media (max-width: 1680px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+    font-size: 21px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 1440px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+    font-size: 18px;
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 1366px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1280px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a {
+    font-size: 14px;
+  }
+}
+.live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a span {
+  position: relative;
+  right: -5px;
+}
+.live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a:hover span {
+  background: #18529F;
+}
+.live-account .container .trading-steps-wrapp .trading-right .btn-wrapper a:hover span svg path {
+  color: #FFCC01;
+  stroke: #FFCC01;
+}
+.live-account .container .trading-left {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-left {
+    margin-bottom: 30px;
+  }
+}
+.live-account .container .trading-left p {
+  padding-right: 30px;
+}
+@media (max-width: 1680px) {
+  .live-account .container .trading-left p {
+    padding-right: 15px;
+  }
+}
+.live-account .container .trading-left h3 {
+  color: #18529F;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .live-account .container .trading-left h3 {
+    margin-bottom: 15px;
+  }
+}
+.live-account .container .trading-btn-wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+@media (max-width: 1366px) {
+  .live-account .container .trading-btn-wrapp {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .live-account .container .trading-btn-wrapp {
+    justify-content: center;
+  }
+}
+.live-account .container .trading-btn-wrapp a {
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1366px) {
+  .live-account .container .trading-btn-wrapp a {
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+}
+.live-account .container .trading-btn-wrapp a:last-child {
+  margin-right: 0;
+}
+
+.advantage .top-section p, .company-profile .top-section p {
+  text-align: center;
+}
+.advantage .top-section .page-link::before, .company-profile .top-section .page-link::before {
+  width: 27%;
+}
+
+
+.youtube-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=inside.css.map */
+
+
+.earn section.top-section.pb-remove-link {
+  padding-bottom: 0;
+}
+.regulated-broken section.top-section.pb-remove-link {
+  padding-bottom: 0;
+}
+.pin-spacer {
+  height: calc(120px + 120px) !important;
+  
+}
+.glossary .h-100{
+  background: white;
+}
+.partner-with-us .top-section .container > .intro-wrapper p {
+  text-align: justify;
+}
+
+
+
+/* css feedback given by dhyani done by shradha on 2/12/24 */
+
+.remove-padding-b section.top-section.pb-remove-link + .top-section{
+ padding-bottom: 45px;
+}
+@media (max-width: 820px) {
+  .remove-padding-b section.top-section.pb-remove-link + .top-section {
+      padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .remove-padding-b section.top-section.pb-remove-link + .top-section {
+      padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,494 @@
+.wpcf7-not-valid {
+  border-color: red !important;
+}
+
+/* Page transition */
+.page-entering {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards !important;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.page-active {
+  opacity: 1;
+  /* animation:fade-out 4s 1s ease-out forwards; */
+}
+
+/* @keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
+.page-exiting {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.layout-fade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Page transition end*/
+
+/* Blog */
+.insight-listing .fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.insight-listing .fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+#kitchens .blog-list li {
+  position: relative;
+}
+
+.lowResImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.highResImage {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* Leena changes */
+.wpcf7-spinner-career {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.wpcf7-spinner-career svg {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.wpcf7-spinner-career {
+  width: auto !important;
+}
+
+/* Sitemap */
+
+.sitemap .sitemap-wrapper {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.sitemap a {
+  padding: 5px;
+}
+
+.sitemap .child-menu {
+  padding-left: 10px;
+}
+
+/* sitemap */
+
+/* Error 404 */
+
+.error-404 .content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+/* Error 404 */
+
+.tradingview-widget-copyright {
+  font-size: 13px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  /* @mixin sf-pro-display-font; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright .blue-text {
+  color: #2962FF !important;
+}
+
+.tradingview-widget-copyright a {
+  text-decoration: none !important;
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:visited {
+  color: #B2B5BE !important;
+}
+
+.tradingview-widget-copyright a:hover .blue-text {
+  color: #1E53E5 !important;
+}
+
+.tradingview-widget-copyright a:active .blue-text {
+  color: #1848CC !important;
+}
+
+.tradingview-widget-copyright a:visited .blue-text {
+  color: #2962FF !important;
+}
+
+/* leena added */
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp .txt-b {
+  font-weight: 600;
+  z-index: 9;
+  position: relative;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp::before {
+  z-index: 1;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp p {
+  z-index: 9;
+  position: relative;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp {
+  text-align: left;
+}
+
+/* leena added */
+/* leena added */
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp .txt-b {
+  font-weight: 600;
+  z-index: 9;
+  position: relative;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp::before {
+  z-index: 1;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp p {
+  z-index: 9;
+  position: relative;
+}
+
+.live-account .container .trading-steps-wrapp>div .trading-steps li .count-text-wrapp {
+  text-align: left;
+}
+
+.regulated-broken .top-section .text-wrapper .right .Orientation .col .text-wrapper ul li p {
+  width: 100%;
+}
+
+.regulated-broken .top-section .text-wrapper .right .Orientation .col .text-wrapper ul li .last-p {
+  width: 80%;
+}
+
+/* leena added */
+
+
+
+
+
+/* accord */
+.new-home-page .accord-txt {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.new-home-page .link-wrapp {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* .card-accord-list li.active .accord-txt {
+  padding: 10px 0; 
+} */
+
+.academy .forex-page .sub-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+nav.main-nav ul li.has-child .content-div .ul-wrap ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+nav.main-nav ul li.has-child .content-div .link-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+nav.main-nav ul li.has-child .has-children {
+  display: none;
+}
+
+/* nav.main-nav ul li.has-child.expand .has-children {
+display: block;
+}  */
+
+.frequently-asked .accordion .accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.frequently-asked .accordion .is-active .accordion-panel {
+  overflow: unset;
+}
+
+.earn.open-live-acc .frequently-asked .accordion .is-active .accordion-panel {
+  overflow: hidden;
+}
+
+.frequently-asked .accordion-panel {
+  display: block !important;
+}
+
+/* :target  {padding-top: 250px;}
+
+@media (max-width: 767px) {
+  :target{
+    padding-top: 270px;
+  }
+} */
+
+/* accord */
+
+/* Trading tools */
+.table-section td span.green-text,
+.table-section td span.red-text {
+  padding-right: 10px;
+}
+
+.wpcf7-response-output {
+  margin-top: 10px;
+}
+
+/* chatgpt */
+.ai .learn-earn-wrapper {
+  margin-top: calc(170px);
+}
+
+@media (max-width: 1440px) {
+  .ai .learn-earn-wrapper {
+    margin-top: calc(130px);
+
+  }
+}
+
+@media (max-width: 767px) {
+  .ai .learn-earn-wrapper {
+    margin-top: calc(95px);
+
+  }
+}
+
+.ai .learn-earn-wrapper .container .learn-earn-list {
+  justify-content: center;
+}
+
+.ai .learn-earn-wrapper .container .learn-earn-list {
+  display: unset;
+}
+
+.ai .learn-earn-wrapper .container .learn-earn-list .learn-mid {
+  position: relative;
+  width: 100%;
+}
+
+.ai .chat-container {
+  height: 100vh;
+  max-height: calc(90vh - 230px);
+}
+
+.ai .typing-container .typing-content {
+  max-width: 100%;
+}
+
+.ai .default-text {
+  height: 100%;
+}
+
+/* Shradha  */
+section.home-risk-warning-wrapp.border-top {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+section.home-risk-warning-wrapp.border-top .container {
+  padding-bottom: 0;
+}
+
+footer .top-contain.link-wrapper {
+  padding-bottom: 0;
+}
+
+section.home-risk-warning-wrapp.border-top .container {
+  max-width: 90%;
+  text-align: left;
+  padding-top: 30px;
+}
+
+section.home-risk-warning-wrapp.border-top .container p {
+  margin-bottom: 15px;
+}
+
+.new-home-page .home-licence-wrapper .container .lice-left .lice-txt p {
+  text-align: left;
+}
+
+
+.new-home-page .home-licence-wrapper .container .lice-left {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 0px;
+  width: 35%;
+}
+
+.new-home-page .home-licence-wrapper .container .lice-right {
+  width: 65%;
+}
+
+@media (max-width: 767px) {
+  .new-home-page .home-licence-wrapper .container .lice-left {
+    width: 100%;
+  }
+
+  .new-home-page .home-licence-wrapper .container .lice-right {
+    width: 100%;
+  }
+
+  .new-home-page .home-licence-wrapper .container .lice-left .lice-txt p {
+    text-align: center;
+  }
+}
+
+.new-home-page .home-licence-wrapper {
+  padding-bottom: 80px;
+}
+
+.ph-number select#code {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+  color: #000;
+  padding-bottom: 0;
+  margin-bottom: 20.2px;
+  margin-right: 40px;
+}
+
+@media (max-width: 767px) {
+  .ph-number select#code {
+    margin-right: 15px;
+  }
+}
+
+.ph-number span {
+  width: 100%;
+}
+
+.col.ph-number {
+  display: flex;
+}
+
+li.contact-us-ph div:nth-child(1) {
+  width: 14% !important;
+  margin-right: 40px;
+  padding-right: 0 !important;
+}
+
+li.contact-us-ph div:nth-child(2) {
+  width: 43% !important;
+  margin-right: 30px;
+}
+
+li.contact-us-ph div:nth-child(3) {
+  width: 43% !important;
+}
+@media (max-width: 767px) {
+  li.contact-us-ph div:nth-child(1) {
+    width: 100% !important;
+    margin-right: 40px;
+    padding-right: 0 !important;
+  }
+  
+  li.contact-us-ph div:nth-child(2) {
+    width: 100% !important;
+    margin-right: 30px;
+  }
+  
+  li.contact-us-ph div:nth-child(3) {
+    width: 100% !important;
+  }
+  
+}
+
+
+/* css feedback given by dhyani done by shradha on 2/12/24 */
+
+.form-wrapper form .form-wrapp > ul .col-wrap > div{
+  padding-right: 0;
+  margin-right: 0;
+}
+
+li.contact-us-ph div:nth-child(1) {
+  width: 15% !important;
+  margin-right: 20px;
+}
+li.contact-us-ph div:nth-child(2) {
+  width: 31% !important;
+  margin-right: 30px;
+}
+li.contact-us-ph div:nth-child(3) {
+  width: 48% !important;
+  padding-right: 0 !important;
+}
+@media (max-width: 767px) {
+  li.contact-us-ph div:nth-child(1) {
+    width: 100% !important;
+    margin-right: 20px;
+  }
+  li.contact-us-ph div:nth-child(2) {
+    width: 100% !important;
+    margin-right: 30px;
+  }
+  li.contact-us-ph div:nth-child(3) {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+}
+.contact .learn-more .arrow-icon {
+  border-radius: 2px;
+}

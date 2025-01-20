@@ -1,0 +1,322 @@
+"use client";
+import React from "react";
+import { MenuData } from "../../../lib/grapghql";
+import { useState } from "react";
+export default function MobileMenu() {
+  const [activeParentIndex, setActiveParentIndex] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
+  const toggleSubMenu = (index) => {
+    setActiveParentIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const MobileMenuData = {
+    query: `query NewQuery {
+  menuItems(where: {location: MOBILE_MENU, parentId: "0"}) {
+    nodes {
+      label
+      path
+      childItems {
+        nodes {
+          label
+          path
+        }
+      }
+    }
+  }
+}
+    `,
+  };
+
+  
+  const menuItems = [
+        {
+          "label": "About Us",
+          "path": "/about-us/company-profile/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Investment Protection",
+          "path": "/investment-protection/regulated-broker/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Partner With Us",
+          "path": "/partner-with-us/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Contact Us",
+          "path": "/contact/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Trade",
+          "path": "/trade/",
+          "childItems": {
+            "nodes": [
+              {
+                "label": "Indices",
+                "path": "/trade/indices/"
+              },
+              {
+                "label": "Stocks",
+                "path": "/trade/stocks/"
+              },
+              {
+                "label": "Forex",
+                "path": "/trade/forex/"
+              },
+              {
+                "label": "Commodities",
+                "path": "/trade/commodities/"
+              },
+              {
+                "label": "Open an Account",
+                "path": "/open-an-account/"
+              },
+              {
+                "label": "Online Platforms",
+                "path": "/online-platforms/"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Learn",
+          "path": "/learn/",
+          "childItems": {
+            "nodes": [
+              {
+                "label": "Indices",
+                "path": "/learn/academy/indices/"
+              },
+              {
+                "label": "Stocks",
+                "path": "/learn/academy/stocks/"
+              },
+              {
+                "label": "Forex",
+                "path": "/learn/academy/forex/"
+              },
+              {
+                "label": "Commodities",
+                "path": "/learn/academy/commodities/"
+              },
+              {
+                "label": "Spot Metal",
+                "path": "/learn/academy/spot-metal/"
+              },
+              {
+                "label": "Futures",
+                "path": "/learn/academy/futures/"
+              },
+              {
+                "label": "Crypto",
+                "path": "/learn/academy/crypto/"
+              },
+              {
+                "label": "ADRs",
+                "path": "/learn/academy/adrs/"
+              },
+              {
+                "label": "Bonds",
+                "path": "/learn/academy/bonds/"
+              },
+              {
+                "label": "Library",
+                "path": "/learn/library/"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Test",
+          "path": "/open-demo-account/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Tools",
+          "path": "/tools/",
+          "childItems": {
+            "nodes": [
+              {
+                "label": "Financial News",
+                "path": "/tools/trading-tools/"
+              },
+              {
+                "label": "Financial Calendar",
+                "path": "/tools/financial-calendar/"
+              },
+              {
+                "label": "Trading Tools – Market Outlook",
+                "path": "/tools/market-outlook/"
+              },
+              {
+                "label": "Technical Strategies",
+                "path": "/tools/technical-strategies/"
+              },
+              {
+                "label": "Technical Strategies – Share CFDs",
+                "path": "/tools/technical-strategies-share-cfds/"
+              },
+              {
+                "label": "Interest Rates",
+                "path": "/tools/interest-rates/"
+              },
+              {
+                "label": "Glossary",
+                "path": "/tools/glossary/"
+              },
+              {
+                "label": "Register for Free Research",
+                "path": "/tools/register-for-free-research/"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Blog",
+          "path": "/blog/",
+          "childItems": {
+            "nodes": []
+          }
+        },
+        {
+          "label": "Client Login",
+          "path": "#",
+          "childItems": {
+            "nodes": [
+              {
+                "label": "Saturn Login",
+                "path": "https://trading.orientfinance.ae/"
+              },
+              {
+                "label": "Install MT5",
+                "path": "#"
+              }
+            ]
+          }
+        }
+      ];
+      
+  // new Promise(function(resolve, reject) {
+  //   MenuData(MobileMenuData).then((res) => {
+  //     resolve(res.data.menuItems.nodes);
+  //   });
+
+  // }).then((res) => res);
+  
+
+  // console.log(menuItems);
+
+  return (
+    <>
+      <div>
+        <div id="burgermenu" className="menu" >
+          <div
+            className="menu-trg fix-el"
+            style={{ transform: "translate(0px, 0px)", opacity: 1 }}
+            onClick={toggleMenu}
+          >
+            <div className="menu-trg__hold">
+              <div className="line line-0"></div>
+              <div className="line line-1"></div>
+              <div className="line line-2"></div>
+            </div>
+          </div>
+        </div>
+
+        <nav className={`main-nav ${isOpen ? "open-menu" : ""}`}>
+          <div className="nav-header">
+            <svg
+              id="menuclose"
+              className="close-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34.594"
+              height="34.592"
+              viewBox="0 0 34.594 34.592"
+              onClick={toggleMenu}
+            >
+              <g
+                id="Group_6368"
+                data-name="Group 6368"
+                transform="translate(-373.09 -29)"
+              >
+                <path
+                  id="Path_715"
+                  data-name="Path 715"
+                  d="M2.635,0h19.19A2.635,2.635,0,0,1,24.46,2.636v19.19a2.635,2.635,0,0,1-2.635,2.635H2.636A2.635,2.635,0,0,1,0,21.825V2.635A2.635,2.635,0,0,1,2.635,0Z"
+                  transform="translate(390.387 29) rotate(45)"
+                  stroke="#fff"
+                  fill="none"
+                ></path>
+              </g>
+            </svg>
+          </div>
+
+          <div className="menu-wrap">
+            <ul className="main-nav-links accordion">
+              {menuItems.map((items, index) => (
+                <li
+                  key={index}
+                  className={`custom-link ${
+                    items.childItems?.nodes.length > 0 ? "has-child" : ""
+                  }`}
+                >
+                  <a
+                    className="toggle"
+                    href={`${items.path}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (items.childItems?.nodes.length > 0) {
+                        toggleSubMenu(index);
+                      }
+                    }}
+                  >
+                    {items.label}
+                  </a>
+
+                  {items.childItems?.nodes.length > 0 &&
+                     (
+                      <div className="inner has-children">
+                        <div className="child-div">
+                          <div className="content-div">
+                            <div className="ul-wrap">
+                              <ul>
+                                {items.childItems.nodes.map(
+                                  (childItem, childIndex) => (
+                                    <li key={childIndex}>
+                                      <a href={childItem.path}>
+                                        {childItem.label}
+                                      </a>
+                                    </li>
+                                  )
+                                )}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </>
+  );
+}
