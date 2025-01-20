@@ -13,7 +13,6 @@ import { useEffect, useState } from "react";
 // import parse from "html-react-parser";
 import { toggleAccordion } from "../_accordion/page";
 
-
 const HomePage = () => {
   const homePageDefault = {
     companyProfile: {
@@ -232,7 +231,7 @@ const HomePage = () => {
         toggleAccordion(this, ".link-wrapp");
       });
     });
-  }
+  };
   const mappedData = data.home.currencyContent.map(
     (items) => items.description
   );
@@ -380,154 +379,150 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <LazyLoad offsetVertical={200}>
-        <section className="home-licence-wrapper">
-          <div
-            className="container"
-            dangerouslySetInnerHTML={{ __html: data.home.licensedContent }}
-          />
-        </section>
-      </LazyLoad>
-      <LazyLoad offsetVertical={300}>
-        <section className="currency-section graph-sec">
-          <div className="container">
-            <LazyLoad threshold={0.5}>
-              <>
-                <ul>
-                  <li
-                    className="rgrggear01"
-                    dangerouslySetInnerHTML={{ __html: mappedData[0] }}
-                  />
-                  <li
-                    className="rgrggear11"
-                    dangerouslySetInnerHTML={{ __html: mappedData[1] }}
-                  />
-                  <li
-                    className="rgrggear21"
-                    dangerouslySetInnerHTML={{ __html: mappedData[2] }}
-                  />
-                </ul>
-                <div
-                  className="img-wrap-bg"
-                  dangerouslySetInnerHTML={{
-                    __html: data.home.currencyBackground,
-                  }}
-                />
-              </>
-            </LazyLoad>
-          </div>
-        </section>
-      </LazyLoad>
-      <LazyLoad offsetVertical={100}>
-        <section className="home-interest-wrapper">
-          <div className="container">
-            <div className="interest-top-wrapp">
-              <span
-                dangerouslySetInnerHTML={{ __html: data.home.description }}
-              />
 
-              <Link
-                className="more-link learn-more"
-                href={`${data.home.knowMoreAboutUs.url}`}
-              >
-                know more about us
-                <span className="arrow-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12.908"
-                    height="12.908"
-                    viewBox="0 0 12.908 12.908"
-                  >
-                    <g
-                      id="Icon_feather-arrow-down-left"
-                      data-name="Icon feather-arrow-down-left"
-                      transform="translate(11.908 12.201) rotate(180)"
-                    >
-                      <path
-                        id="Path_138"
-                        data-name="Path 138"
-                        d="M11.2,0,0,11.2"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                      <path
-                        id="Path_139"
-                        data-name="Path 139"
-                        d="M11.2,11.2H0V0"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
-              </Link>
-            </div>
-            <div
-              className="trade-mob-img-wrapper"
-              style={{
-                transform: "translate(0px, 0px)",
-                rotate: "none",
-                scale: "none",
-              }}
-            >
+      <section className="home-licence-wrapper">
+        <div
+          className="container"
+          dangerouslySetInnerHTML={{ __html: data.home.licensedContent }}
+        />
+      </section>
+
+      <section className="currency-section graph-sec">
+        <div className="container">
+          <LazyLoad threshold={0.5}>
+            <>
+              <ul>
+                <li
+                  className="rgrggear01"
+                  dangerouslySetInnerHTML={{ __html: mappedData[0] }}
+                />
+                <li
+                  className="rgrggear11"
+                  dangerouslySetInnerHTML={{ __html: mappedData[1] }}
+                />
+                <li
+                  className="rgrggear21"
+                  dangerouslySetInnerHTML={{ __html: mappedData[2] }}
+                />
+              </ul>
               <div
-                data-gatsby-image-wrapper=""
-                className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
-              >
-                <div style={{ maxWidth: "724px", display: "block" }}>
-                  <Image
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true"
-                    src={data.home.tradeImage.mediaItemUrl}
-                    style={{
-                      maxWidth: "100%",
-                      display: "block",
-                      position: "static",
-                    }}
-                    height={724}
-                    width={724}
-                  />
-                </div>
+                className="img-wrap-bg"
+                dangerouslySetInnerHTML={{
+                  __html: data.home.currencyBackground,
+                }}
+              />
+            </>
+          </LazyLoad>
+        </div>
+      </section>
+
+      <section className="home-interest-wrapper">
+        <div className="container">
+          <div className="interest-top-wrapp">
+            <span dangerouslySetInnerHTML={{ __html: data.home.description }} />
+
+            <Link
+              className="more-link learn-more"
+              href={`${data.home.knowMoreAboutUs.url}`}
+            >
+              know more about us
+              <span className="arrow-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.908"
+                  height="12.908"
+                  viewBox="0 0 12.908 12.908"
+                >
+                  <g
+                    id="Icon_feather-arrow-down-left"
+                    data-name="Icon feather-arrow-down-left"
+                    transform="translate(11.908 12.201) rotate(180)"
+                  >
+                    <path
+                      id="Path_138"
+                      data-name="Path 138"
+                      d="M11.2,0,0,11.2"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                    <path
+                      id="Path_139"
+                      data-name="Path 139"
+                      d="M11.2,11.2H0V0"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </Link>
+          </div>
+          <div
+            className="trade-mob-img-wrapper"
+            style={{
+              transform: "translate(0px, 0px)",
+              rotate: "none",
+              scale: "none",
+            }}
+          >
+            <div
+              data-gatsby-image-wrapper=""
+              className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+            >
+              <div style={{ maxWidth: "724px", display: "block" }}>
+                <Image
+                  alt=""
+                  role="presentation"
+                  aria-hidden="true"
+                  src={data.home.tradeImage.mediaItemUrl}
+                  style={{
+                    maxWidth: "100%",
+                    display: "block",
+                    position: "static",
+                  }}
+                  height={724}
+                  width={724}
+                />
               </div>
             </div>
-            <div className="trade-feature-wrapp">
-              <ul>
-                {tradeFeature.map((items, index) => {
-                  return (
-                    <li
-                      key={index}
-                      style={{
-                        transform: "translate(0px, 0px) rotate(0deg) scale(1)",
-                        opacity: 1,
-                      }}
-                    >
-                      <div className="icon">
-                        <Image
-                          src={items.image.mediaItemUrl}
-                          alt={items.image.altText}
-                          width={700}
-                          height={500}
-                        />
-                      </div>
-                      <div
-                        className="icon-text-wrap"
-                        dangerouslySetInnerHTML={{ __html: items.description }}
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
           </div>
-        </section>
-      </LazyLoad>
+          <div className="trade-feature-wrapp">
+            <ul>
+              {tradeFeature.map((items, index) => {
+                return (
+                  <li
+                    key={index}
+                    style={{
+                      transform: "translate(0px, 0px) rotate(0deg) scale(1)",
+                      opacity: 1,
+                    }}
+                  >
+                    <div className="icon">
+                      <Image
+                        src={items.image.mediaItemUrl}
+                        alt={items.image.altText}
+                        width={700}
+                        height={500}
+                      />
+                    </div>
+                    <div
+                      className="icon-text-wrap"
+                      dangerouslySetInnerHTML={{ __html: items.description }}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="home-trading-wrapper">
         <div className="container">
           <div className="trading-title-wrapp">
@@ -613,207 +608,204 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <LazyLoad offsetVertical={300}>
-        <section className="learn-earn-wrapper">
-          <div className="container">
-            <span
+
+      <section className="learn-earn-wrapper">
+        <div className="container">
+          <span
+            dangerouslySetInnerHTML={{
+              __html: data.home.keepLearningKeepEarningDescription,
+            }}
+          />
+          <div className="learn-earn-list">
+            <div
+              className="learn-left txt-right-wrapp"
               dangerouslySetInnerHTML={{
-                __html: data.home.keepLearningKeepEarningDescription,
+                __html: data.home.tradingBasics,
               }}
             />
-            <div className="learn-earn-list">
-              <div
-                className="learn-left txt-right-wrapp"
-                dangerouslySetInnerHTML={{
-                  __html: data.home.tradingBasics,
-                }}
-              />
-              <div>
-                <div className="learn-mid" style={{ position: "relative" }}>
-                  <div className="chat-container">
-                    <div className="default-text">
-                      <p>
-                        Start a conversation and explore the
-                        <span className="yellow-AI">power of AI.</span>
-                        <br />
-                        Your chat history will be displayed here.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="typing-container">
-                    <div className="typing-content">
-                      <div className="typing-textarea">
-                        <textarea
-                          id="chat-input"
-                          placeholder="Enter a prompt here"
-                        ></textarea>
-                        <span
-                          id="send-btn"
-                          className="material-symbols-rounded"
-                        ></span>
-                      </div>
-                      <div className="typing-controls">
-                        <span
-                          id="theme-btn"
-                          className="material-symbols-rounded"
-                        >
-                          light-mode
-                        </span>
-                        <span
-                          id="delete-btn"
-                          className="material-symbols-rounded"
-                        ></span>
-                      </div>
-                    </div>
+            <div>
+              <div className="learn-mid" style={{ position: "relative" }}>
+                <div className="chat-container">
+                  <div className="default-text">
+                    <p>
+                      Start a conversation and explore the
+                      <span className="yellow-AI">power of AI.</span>
+                      <br />
+                      Your chat history will be displayed here.
+                    </p>
                   </div>
                 </div>
-                <div
-                  className="desclaimer-btn-wrap"
-                  dangerouslySetInnerHTML={{ __html: data.home.note }}
-                />
-                <div className="demo-acc">
-                  <Link
-                    href={`${data.home.chatInNewWindowLink.url}`}
-                    className="btn-border demo-acc"
-                    target="_blank"
-                  >
-                    {data.home.chatInNewWindowLink.title}
-                  </Link>
+                <div className="typing-container">
+                  <div className="typing-content">
+                    <div className="typing-textarea">
+                      <textarea
+                        id="chat-input"
+                        placeholder="Enter a prompt here"
+                      ></textarea>
+                      <span
+                        id="send-btn"
+                        className="material-symbols-rounded"
+                      ></span>
+                    </div>
+                    <div className="typing-controls">
+                      <span id="theme-btn" className="material-symbols-rounded">
+                        light-mode
+                      </span>
+                      <span
+                        id="delete-btn"
+                        className="material-symbols-rounded"
+                      ></span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
-                className="learn-right txt-left-wrapp"
-                dangerouslySetInnerHTML={{ __html: data.home.stayInformed }}
+                className="desclaimer-btn-wrap"
+                dangerouslySetInnerHTML={{ __html: data.home.note }}
               />
+              <div className="demo-acc">
+                <Link
+                  href={`${data.home.chatInNewWindowLink.url}`}
+                  className="btn-border demo-acc"
+                  target="_blank"
+                >
+                  {data.home.chatInNewWindowLink.title}
+                </Link>
+              </div>
             </div>
-            <div className="lean-earn-btn">
-              <a
-                className="lean-btn learn-more"
-                href={`${data.home.openADemoAccountLink.url}`}
-              >
-                {data.home.openADemoAccountLink.title}
-                <span className="arrow-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12.908"
-                    height="12.908"
-                    viewBox="0 0 12.908 12.908"
-                  >
-                    <g
-                      id="Icon_feather-arrow-down-left"
-                      data-name="Icon feather-arrow-down-left"
-                      transform="translate(11.908 12.201) rotate(180)"
-                    >
-                      <path
-                        id="Path_138"
-                        data-name="Path 138"
-                        d="M11.2,0,0,11.2"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                      <path
-                        id="Path_139"
-                        data-name="Path 139"
-                        d="M11.2,11.2H0V0"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-              <a
-                className="lean-btn learn-more"
-                href={data.home.registerForAFreeSeminarLink.url}
-              >
-                {data.home.registerForAFreeSeminarLink.title}
-                <span className="arrow-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12.908"
-                    height="12.908"
-                    viewBox="0 0 12.908 12.908"
-                  >
-                    <g
-                      id="Icon_feather-arrow-down-left"
-                      data-name="Icon feather-arrow-down-left"
-                      transform="translate(11.908 12.201) rotate(180)"
-                    >
-                      <path
-                        id="Path_138"
-                        data-name="Path 138"
-                        d="M11.2,0,0,11.2"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                      <path
-                        id="Path_139"
-                        data-name="Path 139"
-                        d="M11.2,11.2H0V0"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-              <a
-                className="lean-btn learn-more"
-                href={`${data.home.signUpForFreeResearchLink.url}`}
-              >
-                {data.home.signUpForFreeResearchLink.title}
-                <span className="arrow-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="12.908"
-                    height="12.908"
-                    viewBox="0 0 12.908 12.908"
-                  >
-                    <g
-                      id="Icon_feather-arrow-down-left"
-                      data-name="Icon feather-arrow-down-left"
-                      transform="translate(11.908 12.201) rotate(180)"
-                    >
-                      <path
-                        id="Path_138"
-                        data-name="Path 138"
-                        d="M11.2,0,0,11.2"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                      <path
-                        id="Path_139"
-                        data-name="Path 139"
-                        d="M11.2,11.2H0V0"
-                        transform="translate(0 0)"
-                        fill="none"
-                        stroke="#18529f"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-            </div>
+            <div
+              className="learn-right txt-left-wrapp"
+              dangerouslySetInnerHTML={{ __html: data.home.stayInformed }}
+            />
           </div>
-        </section>
-      </LazyLoad>
+          <div className="lean-earn-btn">
+            <a
+              className="lean-btn learn-more"
+              href={`${data.home.openADemoAccountLink.url}`}
+            >
+              {data.home.openADemoAccountLink.title}
+              <span className="arrow-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.908"
+                  height="12.908"
+                  viewBox="0 0 12.908 12.908"
+                >
+                  <g
+                    id="Icon_feather-arrow-down-left"
+                    data-name="Icon feather-arrow-down-left"
+                    transform="translate(11.908 12.201) rotate(180)"
+                  >
+                    <path
+                      id="Path_138"
+                      data-name="Path 138"
+                      d="M11.2,0,0,11.2"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                    <path
+                      id="Path_139"
+                      data-name="Path 139"
+                      d="M11.2,11.2H0V0"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <a
+              className="lean-btn learn-more"
+              href={data.home.registerForAFreeSeminarLink.url}
+            >
+              {data.home.registerForAFreeSeminarLink.title}
+              <span className="arrow-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.908"
+                  height="12.908"
+                  viewBox="0 0 12.908 12.908"
+                >
+                  <g
+                    id="Icon_feather-arrow-down-left"
+                    data-name="Icon feather-arrow-down-left"
+                    transform="translate(11.908 12.201) rotate(180)"
+                  >
+                    <path
+                      id="Path_138"
+                      data-name="Path 138"
+                      d="M11.2,0,0,11.2"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                    <path
+                      id="Path_139"
+                      data-name="Path 139"
+                      d="M11.2,11.2H0V0"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <a
+              className="lean-btn learn-more"
+              href={`${data.home.signUpForFreeResearchLink.url}`}
+            >
+              {data.home.signUpForFreeResearchLink.title}
+              <span className="arrow-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.908"
+                  height="12.908"
+                  viewBox="0 0 12.908 12.908"
+                >
+                  <g
+                    id="Icon_feather-arrow-down-left"
+                    data-name="Icon feather-arrow-down-left"
+                    transform="translate(11.908 12.201) rotate(180)"
+                  >
+                    <path
+                      id="Path_138"
+                      data-name="Path 138"
+                      d="M11.2,0,0,11.2"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                    <path
+                      id="Path_139"
+                      data-name="Path 139"
+                      d="M11.2,11.2H0V0"
+                      transform="translate(0 0)"
+                      fill="none"
+                      stroke="#18529f"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="home-risk-warning-wrapp top-stories">
         <div className="container">
           <div className="dflex">
@@ -834,55 +826,50 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <LazyLoad threshold={0.75}>
-        <section className="client-speak slide-up visible">
-          <div className="container">
-            <span
-              dangerouslySetInnerHTML={{
-                __html: clientSpeakData.clientSpeak.clientSpeakDescription,
-              }}
-            />
 
-            <Swiper
-              className="swiper"
-              navigation
-              slidesPerView="auto"
-              // slidesPerView={2}
-              spaceBetween={50}
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-            >
-              {clientSpeakData.clientSpeak.clientSpeakSlide.map(
-                (item, index) => (
-                  <SwiperSlide
-                    key={item.title || index}
-                    className="swiper-slide"
-                    style={{ width: "497.5px", marginRight: "30px" }}
-                  >
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: item.clientSpeakSlideDescription,
-                      }}
-                    />
-                  </SwiperSlide>
-                )
-              )}
-              <div className="swiper-pagination swiper-pagination-clickable">
-                {clientSpeakData.clientSpeak.clientSpeakSlide.map(
-                  (_, index) => (
-                    <span
-                      key={index}
-                      className={`swiper-pagination-bullet ${
-                        index === 0 ? "swiper-pagination-bullet-active" : ""
-                      }`}
-                    />
-                  )
-                )}
-              </div>
-            </Swiper>
-          </div>
-        </section>
-      </LazyLoad>
+      <section className="client-speak slide-up visible">
+        <div className="container">
+          <span
+            dangerouslySetInnerHTML={{
+              __html: clientSpeakData.clientSpeak.clientSpeakDescription,
+            }}
+          />
+
+          <Swiper
+            className="swiper"
+            navigation
+            slidesPerView="auto"
+            // slidesPerView={2}
+            spaceBetween={50}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            {clientSpeakData.clientSpeak.clientSpeakSlide.map((item, index) => (
+              <SwiperSlide
+                key={item.title || index}
+                className="swiper-slide"
+                style={{ width: "497.5px", marginRight: "30px" }}
+              >
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: item.clientSpeakSlideDescription,
+                  }}
+                />
+              </SwiperSlide>
+            ))}
+            <div className="swiper-pagination swiper-pagination-clickable">
+              {clientSpeakData.clientSpeak.clientSpeakSlide.map((_, index) => (
+                <span
+                  key={index}
+                  className={`swiper-pagination-bullet ${
+                    index === 0 ? "swiper-pagination-bullet-active" : ""
+                  }`}
+                />
+              ))}
+            </div>
+          </Swiper>
+        </div>
+      </section>
     </>
   );
 };
