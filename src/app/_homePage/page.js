@@ -4,7 +4,7 @@ import { heroSectionData } from "../../../lib/grapghql";
 import { optionPage } from "../../../lib/grapghql";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import LazyLoad from "react-lazy-load";
+
 import "swiper/css/pagination";
 import "../home.css";
 import "../common.css";
